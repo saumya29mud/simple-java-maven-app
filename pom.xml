@@ -24,7 +24,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.13.0</version>
+          <version>3.6.3</version>
           <configuration>
             <release>17</release>
           </configuration>
@@ -36,7 +36,7 @@
         <!-- Build an executable JAR -->
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.4.1</version>
+        <version>3.6.3</version>
         <configuration>
           <archive>
             <manifest>
@@ -53,17 +53,17 @@
         <version>3.5.0</version>
         <executions>
           <execution>
-            <id>enforce-maven</id>
+            <id>maven 3.6.3</id>
             <goals>
-              <goal>enforce</goal>
+              <goal>Clean Package</goal>
             </goals>
             <configuration>
               <rules>
                 <requireMavenVersion>
-                  <version>[3.9.2,)</version>
+                  <version>[3.6.3)</version>
                 </requireMavenVersion>
                 <requireJavaVersion>
-                  <version>[17,)</version>
+                  <version>[11,)</version>
                 </requireJavaVersion>
               </rules>
             </configuration>
